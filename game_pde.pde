@@ -66,6 +66,28 @@ void setup()
   
 }
 
+void draw()
+{
+  background(0);
+  
+ if(start==0)
+ {
+     textSize(38);
+     
+   text("PRESS SHIFT to start single player",5,100);
+   text("PRESS ALt to start multi player",5,200);
+   
+ }
+ else if(start==1)  //single player mode
+ {
+    single();
+ }
+ 
+ else if(start==2)  //multi player mode
+ {
+    multi();
+ }
+}
 
 void keyPressed()
 {
